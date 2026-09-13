@@ -15,7 +15,7 @@
         <header class="header">
             <!--header content to go here-->
             <!-- Row 1 -->
-            <div class="" row>
+            <div class="row">
                 <div class="col">
                     <!-- logo -->
                     <img src="../images/EduMax_logo.png" alt="EduMax logo" class="img-fluid">
@@ -100,61 +100,64 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <p>Add, edit and remove scheduled announcements for students studying your module</p>
-                                <a class="btn btn-primary" href="./placeholder.html" role="button">New Announcement</a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#announcementForm" role="button" aria-expanded="false" aria-controls="announcementForm">New Announcement</a>
                             </div>
                         </div>
                     </section>
                     <section>
-                        <div>
-                            <form action = "" method ="">
-                                <div>
-                                    <label for="subject">Subject Line:</label>
-                                    <input type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="content">Content:</label>
-                                    <textarea name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="sender-name" >Sender's Name:</label>
-                                    <input type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="sender-role">Sender's Role:</label>
-                                    <input type="text" id="sender-role" name="sender-role" value="Tutor" required>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="attachment">Attachments:</label>
-                                    <input type="file" id="attachment" name="attachment">
-                                </div>
-                                <div>
-                                    <label for="date">Date:</label>
-                                    <input type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="time">Time:</label>
-                                    <input type="time" id="time" name="time" value="19:00" required>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <label for="priority">Priority</label>
-                                    <select id="priority" name="priority" >
-                                        <option value="low">Low</option>
-                                        <option value="normal">Normal</option>
-                                        <option value="high">High</option>
-                                    </select>
-                                </div>
-                                <div></div>
-                                <div>
-                                    <button type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
+                        <div class="collapse" id="announcementForm">
+                            <div>
+                                <form action = "" method ="">
+                                    <div>
+                                        <label for="subject">Subject Line:</label>
+                                        <input type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="content">Content:</label>
+                                        <textarea name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="sender-name" >Sender's Name:</label>
+                                        <input type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="sender-role">Sender's Role:</label>
+                                        <input type="text" id="sender-role" name="sender-role" value="Tutor" required>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="attachment">Attachments:</label>
+                                        <input type="file" id="attachment" name="attachment">
+                                    </div>
+                                    <div>
+                                        <label for="date">Date:</label>
+                                        <input type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="time">Time:</label>
+                                        <input type="time" id="time" name="time" value="19:00" required>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <label for="priority">Priority</label>
+                                        <select id="priority" name="priority" >
+                                            <option value="low">Low</option>
+                                            <option value="normal" selected>Normal</option>
+                                            <option value="high">High</option>
+                                        </select>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <button type="submit">Submit</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#announcementForm">Close</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>    
                     </section>
                 </div>
             </div>
@@ -178,7 +181,7 @@
         </footer>
     </div>
     <!-- Bootstrap JavaScript -->
-    <script src="../js/bootstrap.min.js"></script><!-- Basic -->
+    <!-- <script src="../js/bootstrap.min.js"></script>Basic -->
     <script src="../js/bootstrap.bundle.min.js"></script><!-- Extras e.g. dropdown menus -->
 </body>
 </html>
