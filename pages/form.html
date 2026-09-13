@@ -15,7 +15,7 @@
         <header class="header">
             <!--header content to go here-->
             <!-- Row 1 -->
-            <div class="row">
+            <div class="" row>
                 <div class="col">
                     <!-- logo -->
                     <img src="../images/EduMax_logo.png" alt="EduMax logo" class="img-fluid">
@@ -95,13 +95,12 @@
                 <div class="container">
                     <section>
                         <div class="row mt-3">
-                            <h2>Announcements</h2>
+                                <h2>Announcements</h2>
                         </div>
-                        <!-- TODO: Add announcements content to replace AB101 content that has been removed-->
                         <div class="row mb-3">
                             <div class="col">
                                 <p>Add, edit and remove scheduled announcements for students studying your module</p>
-                                <a class=""btn btn-primary" href="./placeholder.html" role="button">New Announcement</a>
+                                <a class="btn btn-primary" href="./placeholder.html" role="button">New Announcement</a>
                             </div>
                         </div>
                     </section>
@@ -110,40 +109,41 @@
                             <form action = "" method ="">
                                 <div>
                                     <label for="subject">Subject Line:</label>
-                                    <input type="text">
+                                    <input type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
                                 </div>
                                 <div></div>
                                 <div>
                                     <label for="content">Content:</label>
+                                    <textarea name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
                                 </div>
                                 <div></div>
                                 <div>
-                                    <label for="sender-name">Sender's Name:</label>
-                                    <input type="text" id="sender-name" required>
+                                    <label for="sender-name" >Sender's Name:</label>
+                                    <input type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
                                 </div>
                                 <div></div>
                                 <div>
                                     <label for="sender-role">Sender's Role:</label>
-                                    <input type="text" id="sender-role" required>
+                                    <input type="text" id="sender-role" name="sender-role" value="Tutor" required>
                                 </div>
                                 <div></div>
                                 <div>
                                     <label for="attachment">Attachments:</label>
-                                    <input type="file" id="attachment" required>
+                                    <input type="file" id="attachment" name="attachment">
                                 </div>
                                 <div>
                                     <label for="date">Date:</label>
-                                    <input type="date" name="date" min="2026-01-01" max="2028-12-31" required>
+                                    <input type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
                                 </div>
                                 <div></div>
                                 <div>
                                     <label for="time">Time:</label>
-                                    <input type="time" name="time" required>
+                                    <input type="time" id="time" name="time" value="19:00" required>
                                 </div>
                                 <div></div>
                                 <div>
                                     <label for="priority">Priority</label>
-                                    <select name="priority">
+                                    <select id="priority" name="priority" >
                                         <option value="low">Low</option>
                                         <option value="normal">Normal</option>
                                         <option value="high">High</option>
