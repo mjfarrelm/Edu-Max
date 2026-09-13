@@ -107,53 +107,46 @@
                     <section>
                         <div class="collapse" id="announcementForm">
                             <div>
-                                <form action = "https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method ="post">
-                                    <div>
-                                        <label for="subject">Subject Line:</label>
-                                        <input type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
+                                <form class="register" action = "https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method ="post">
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="subject">Subject Line:</label>
+                                        <input class="form-control" type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
                                     </div>
-                                    <div></div>
-                                    <input type="hidden" name="item_ID" value="30001000-5000-654321fedcba">
-                                    <div>
-                                        <label for="content">Content:</label>
-                                        <textarea name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
+                                    <input class="form-control" type="hidden" name="item_ID" value="30001000-5000-654321fedcba">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="content">Content:</label>
+                                        <textarea class="form-control" name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <label for="sender-name" >Sender's Name:</label>
-                                        <input type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="sender-name" >Sender's Name:</label>
+                                        <input class="form-control" type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <label for="sender-role">Sender's Role:</label>
-                                        <input type="text" id="sender-role" name="sender-role" value="Tutor" required>
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="sender-role">Sender's Role:</label>
+                                        <input class="form-control" type="text" id="sender-role" name="sender-role" value="Tutor" required>
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <label for="attachment">Attachments:</label>
-                                        <input type="file" id="attachment" name="attachment">
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="attachment">Attachments:</label>
+                                        <input class="form-control" type="file" id="attachment" name="attachment">
                                     </div>
-                                    <div>
-                                        <label for="date">Date:</label>
-                                        <input type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="date">Date:</label>
+                                        <input class="form-control" type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <label for="time">Time:</label>
-                                        <input type="time" id="time" name="time" value="19:00" required>
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="time">Time:</label>
+                                        <input class="form-control" type="time" id="time" name="time" value="19:00" required>
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <label for="priority">Priority</label>
-                                        <select id="priority" name="priority" >
+                                    <div class="mb-3">
+                                        <label class="form-label"  for="priority">Priority</label>
+                                        <select class="form-select" id="priority" name="priority" >
                                             <option value="low">Low</option>
                                             <option value="normal" selected>Normal</option>
                                             <option value="high">High</option>
                                         </select>
                                     </div>
-                                    <div></div>
                                     <div>
-                                        <button type="submit">Submit</button>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
                                         <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#announcementForm">Close</button>
                                     </div>
                                 </form>
