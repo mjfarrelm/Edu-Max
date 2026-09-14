@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- TM252 EMA Q3A-->
     <title>EduMax - Announcements</title>
-    <meta name="author" content="TM252 Module Team">
+    <meta name="author" content="TM252 EMA">
     <meta name="description" content="An online learning resource by students for students">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css"><!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="../css/custom.css"><!-- Custom stylesheet - linked after Bootstrap so that entries here take precedence and override Bootstrap's style -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"><!-- BOOTSTRAP STYLESHEET -->
+    <link rel="stylesheet" href="../css/custom.css"><!-- CUSTOM STYLESHEET -->
 </head>
 <body>
-    <!-- Fixed-width container. This container's max-width will change at different breakpoints -->
     <div class="container">
         <header class="header">
-            <!--header content to go here-->
-            <!-- Row 1 -->
             <div class="row">
                 <div class="col">
-                    <!-- logo -->
                     <img src="../images/EduMax_logo.png" alt="EduMax logo" class="img-fluid">
                 </div>
                 <div class="col">
-                    <!-- site name -->
                     <h1 class="header">EduMax</h1>
                 </div>
                 <div class="col text-end">
-                    <!-- login button -->
                     <a class="btn btn-primary m-2" href="./placeholder.html" role="button">Login</a>
                 </div>
             </div>
-            <!-- Row 2 -->
             <div class="row g-0 bg-dark">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg p-2" data-bs-theme="dark">
@@ -38,7 +32,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
-                            <!-- main navigation -->
+                            <!-- NAVIGATION -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="./placeholder.html">Home</a>
                                 </li>
@@ -68,7 +62,7 @@
                     </nav>
                 </div>
                 <div class="col">
-                    <!-- search box -->
+                    <!-- SEARCH BOX -->
                     <form class="d-flex p-2" role="search">
                         <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
                         <button class="btn btn-outline-info" type="submit">Search</button>
@@ -76,11 +70,9 @@
                 </div>
             </div>
         </header>
-        <!-- Row 3 -->
         <div class="row mt-2 ms-0">
             <div class="col">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <!-- breadcrumbs -->
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="./placeholder.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Announcements</li>
@@ -89,10 +81,9 @@
             </div>
         </div>
         <main>
-            <!-- page-specific content in sections -->
-            <!-- Row 4 -->
             <div class="row ms-0">
                 <div class="container">
+                    <!-- NEW ANNOUNCEMENT SECTION-->
                     <section>
                         <div class="row mt-3">
                                 <h2>Announcements</h2>
@@ -104,7 +95,8 @@
                             </div>
                         </div>
                     </section>
-                    <section>
+                    <!-- FORM SECTION FOR NEW ANNOUNCEMENTS-->
+                    <div>
                         <div class="collapse" id="announcementForm">
                             <div>
                                 <form class="register" action = "https://students.open.ac.uk/mct/tm252/reflect/reflect.php" aria-label="New announcement" method ="post">
@@ -112,13 +104,14 @@
                                         <label class="form-label" for="subject">Subject Line:</label>
                                         <input class="form-control" type="text" name="subject" id="subject" value="TM252 EMA Tutorial">
                                     </div>
+                                    <!-- HIDDEN FIELD FOR FORM WITH ID AND VALUE PROVIDED-->
                                     <input type="hidden" name="item_ID" value="30001000-5000-654321fedcba">
                                     <div class="mb-3">
                                         <label class="form-label" for="content">Content:</label>
                                         <textarea class="form-control" name="content" id="content" rows="5" required>Tutorial to cover wireframe and form implementation</textarea>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="sender-name" >Sender's Name:</label>
+                                         <label class="form-label" for="sender-name" >Sender's Name:</label>
                                         <input class="form-control" type="text" id="sender-name" name ="sender-name" value="Jane Doe" required>
                                     </div>
                                     <div class="mb-3">
@@ -126,21 +119,21 @@
                                         <input class="form-control" type="text" id="sender-role" name="sender-role" value="Tutor" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="attachment">Attachments:</label>
+                                         <label class="form-label" for="attachment">Attachments:</label>
                                         <input class="form-control" type="file" id="attachment" name="attachment">
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="date">Date:</label>
-                                        <input class="form-control" type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
+                                           <label class="form-label" for="date">Date:</label>
+                                         <input class="form-control" type="date" id="date" name="date" min="2026-01-01" max="2028-12-31" value="2026-09-21" required>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="time">Time:</label>
                                         <input class="form-control" type="time" id="time" name="time" value="19:00" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="priority">Priority</label>
-                                        <select class="form-select" id="priority" name="priority" >
-                                            <option value="low">Low</option>
+                                         <label class="form-label" for="priority">Priority</label>
+                                         <select class="form-select" id="priority" name="priority" >
+                                             <option value="low">Low</option>
                                             <option value="normal" selected>Normal</option>
                                             <option value="high">High</option>
                                         </select>
@@ -151,30 +144,27 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>    
-                    </section>
+                        </div>
+                    </div>      
                 </div>
             </div>
         </main>
         <footer>
-            <!-- Row 5 -->
+            <!-- FOOTER SECTION-->
             <div class="row me-0">
                 <div class="col">
                     <nav class="nav">
-                        <!-- secondary navigation to go here -->
                         <a class="nav-link" href="./placeholder.html">Privacy</a>
                         <a class="nav-link" href="./placeholder.html">About Us</a>
                         <a class="nav-link" href="./placeholder.html">Support</a>
                     </nav>
                 </div>
                 <div class="col text-end">
-                    <!-- copyright notice -->
                     <p>&copy; EduMax 2024</p>
                 </div>
             </div>
         </footer>
     </div>
-    <!-- Bootstrap JavaScript -->
-    <script src="../js/bootstrap.bundle.min.js"></script><!-- Extras e.g. dropdown menus -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
